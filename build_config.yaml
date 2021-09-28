@@ -1,0 +1,48 @@
+# https://kcpoipoi.hatenablog.com/entry/2020/07/27/120438
+
+input-files:
+  - report.md
+  
+output-file: tmp.tex
+
+pdf-engine: lualatex
+pdf-engine-opts:
+    - "-shell-escape"
+
+listings: true
+include-in-header:
+    - /usr/lib/listings-setup.tex
+
+variables:
+  documentclass: ltjsarticle
+  classoption: pandoc
+  indent: true
+  fontsize: 10pt
+  colorlinks: true
+  urlcolor: "blue"
+  toccolor: "gray"
+  linkcolor: "red"
+  anchorcolor: "red"
+
+  geometry:
+    - top=20mm
+    - right=24mm
+    - left=24mm
+    - bottom=20mm
+    - heightrounded
+
+metadata:
+  figureTitle: "図 "
+  tableTitle: "表 "
+  listingTitle: "リスト "
+  figPrefix: "図"
+  eqnPrefix: "式"
+  tblPrefix: "表"
+  lstPrefix: "リスト"
+
+
+number-sections: true
+
+filters:
+  - /usr/lib/minted_filter.py
+  - /usr/lib/pandoc-crossref

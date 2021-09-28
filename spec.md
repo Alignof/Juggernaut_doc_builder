@@ -1,14 +1,11 @@
 ---
-title: "specification"
-author: Author Name
-date: \today
 listings: True
 codeBlockCaptions: True
 ---
 
 \begin{table}[ht!]
     \centering
-    \begin{tabular}{p{3cm}|p{13cm}} \hline
+    \begin{tabular}{p{2cm}|p{13cm}} \hline
         装置名          & four buttons      \\\hline
         作問者          & Takana Norimasa   \\\hline
         制作日          & 2021 9/28         \\\hline

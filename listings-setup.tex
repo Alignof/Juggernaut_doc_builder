@@ -1,0 +1,46 @@
+%\usepackage{luatexja}
+%\usepackage[ipa]{luatexja-preset}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\usepackage{catchfile, fvextra, xstring, environ, xcolor}
+\usepackage{accsupp}
+\usepackage[cache=false]{minted}
+\usepackage[most, theorems, listings, minted, breakable]{tcolorbox}
+\usemintedstyle{monokai}
+
+\definecolor{bg}{HTML}{333333}
+\definecolor{line}{HTML}{000000}
+\definecolor{bill}{RGB}{229,225,225}
+
+\usepackage{caption}
+\newenvironment{longlisting}{\captionsetup{type=listing}}{}
+\newcounter{listings}
+
+\setminted{
+    linenos=true,
+    autogobble,
+}
+
+\newtcblisting{myminted}[3][]{%
+    theorem={Listing}{listings}{#3},
+     fonttitle=\scriptsize\bfseries,
+     listing engine=minted,
+     minted language=#2,
+     colback=bg,
+     minted options={%
+         linenos,
+         breaklines, 
+         breakbefore=.,
+         autogobble,
+         fontsize=\small,
+         numbersep=3mm,
+         xleftmargin=2mm,
+         baselinestretch=1},
+     overlay={%
+       \begin{tcbclipinterior}
+           \fill[gray!25] (frame.south west) rectangle ([xshift=5mm]frame.north west);
+       \end{tcbclipinterior}},
+     breakable, enhanced, listing only, #1,
+}
+

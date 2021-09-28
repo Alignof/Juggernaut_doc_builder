@@ -6,6 +6,17 @@ listings: True
 codeBlockCaptions: True
 ---
 
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{p{3cm}|p{13cm}} \hline
+        装置名          & four buttons      \\\hline
+        作問者          & Takana Norimasa   \\\hline
+        制作日          & 2021 9/28         \\\hline
+        装置番号        & 000-001           \\\hline
+        制限時間        & 15:00             \\\hline
+    \end{tabular}
+\end{table}
+
 # 概要
 この装置は練習問題となる基礎的な問題です．
 ボタン4つから構成されているシンプルな作りです．

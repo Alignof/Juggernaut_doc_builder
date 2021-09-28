@@ -5,34 +5,32 @@ codeBlockCaptions: True
 
 \begin{table}[ht!]
     \centering
+    \large
     \begin{tabular}{p{2cm}|p{13cm}} \hline
         装置名          & four buttons      \\\hline
-        作問者          & Takana Norimasa   \\\hline
-        制作日          & 2021 9/28         \\\hline
         装置番号        & 000-001           \\\hline
-        制限時間        & 15:00             \\\hline
+        作問者          & Write your name   \\\hline
+        作問日          & 2021 9/28         \\\hline
+        制限時間        & 15m00s            \\\hline
     \end{tabular}
 \end{table}
 
 # 概要
 この装置は練習問題となる基礎的な問題です．
-ボタン4つから構成されているシンプルな作りです．
+ボタン4つから構成されているシンプルな作りになってます．  
 落ち着いて配線とプログラムの関係が理解できれば解けることでしょう．
 
 
 # 回路
 回路の全体の写真を[@fig:circuit]に示す．
 
-![](./circuit.jpg) {#fig:circuit}
+![回路全体の写真](./circuit.jpg){#fig:circuit}
 
-
-# 部品
-
-[@tbl:parts]に回路に使用する部品の一覧を示す．
+また，回路に使用する部品の一覧を[@tbl:parts]に示す．
 
 部品名          個数        データシート
 ------          ------      ------------
-タクトスイッチ  4           -
+タクトスイッチ  4           [https://akizukidenshi.com/download/ds/switronic/1273HIM-160G-G.pdf](https://akizukidenshi.com/download/ds/switronic/1273HIM-160G-G.pdf)
 
 : 回路に使用する部品の一覧 {#tbl:parts}
 

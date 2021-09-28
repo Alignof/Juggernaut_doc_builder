@@ -1,7 +1,7 @@
 # https://kcpoipoi.hatenablog.com/entry/2020/07/27/120438
 
 input-files:
-  - report.md
+  - specification.md
   
 output-file: tmp.tex
 

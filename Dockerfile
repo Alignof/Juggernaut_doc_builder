@@ -1,4 +1,4 @@
-FROM pandoc/latex:2.11.2
+FROM pandoc/latex:3.1.1
 ENTRYPOINT ["sh", "/usr/lib/build.sh"]
 RUN tlmgr install \
       ipaex \
@@ -11,12 +11,14 @@ RUN tlmgr install \
       xstring \
       accsupp \
       tcolorbox \
+      tikzfill \
+      pdfcol \
       luatexja
 RUN tlmgr update --self --all
 RUN apk add python3 py3-pip py3-pygments
 RUN ln -s /usr/bin/python3 /usr/bin/python
 RUN pip3 install pandocfilters
-RUN wget -O - https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.8.4/pandoc-crossref-Linux.tar.xz | \
+RUN wget -O - https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.15.1/pandoc-crossref-Linux.tar.xz | \
   tar Jxf - \
   && mv pandoc-crossref /usr/lib/ \
   && rm -rf pandoc-crossref.1

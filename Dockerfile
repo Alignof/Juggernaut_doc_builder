@@ -20,6 +20,6 @@ RUN wget -O - https://github.com/lierdakil/pandoc-crossref/releases/download/v0.
   tar Jxf - \
   && mv pandoc-crossref /usr/lib/ \
   && rm -rf pandoc-crossref.1
-COPY ./minted_filter.py /usr/lib/
-COPY ./listings-setup.tex /usr/lib/
-COPY ./build.sh /usr/lib/
+COPY ./scripts/minted_filter.py /usr/lib/
+COPY ./scripts/listings-setup.tex /usr/lib/
+COPY ./scripts/build.sh /usr/lib/

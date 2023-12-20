@@ -24,7 +24,7 @@ codeBlockCaptions: True
 # 回路
 回路の全体の写真を[@fig:circuit]に示す．
 
-![回路全体の写真](./circuit.jpg){#fig:circuit}
+![回路全体の写真](./images/circuit.jpg){#fig:circuit}
 
 また，回路に使用する部品の一覧を[@tbl:parts]に示す．
 
